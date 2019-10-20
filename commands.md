@@ -150,4 +150,8 @@ luego de resolver los conflictos tenemos que rastrearlos nuevamente y como ya es
 
 Para agregar un servidor remoto el cual almacene nuestros archivos rastreados con git
 
-git remote add origin <url>
+git remote add <alias> <url> ej: git remote add origin <url>
+
+Enviar datos rastreados con git nuestros al servidor remoto
+
+git push origin <rama>
