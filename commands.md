@@ -11,6 +11,10 @@ añadir todas las carpetas y archivos en la carpeta actual posiconada
 
 git add .
 
+Para añadir el rastreo a archivos ya rastreados anteriormente y conjunto a un commit podemos usar, cabe destacar que solo funciona si son archivos de los cuales nosotros ya hemos rastreados(tracking)
+
+git commit -am "mensaje"
+
 Estado del repositorio local(Indica que archivos no estan siendo rastreados)
 
 git status
@@ -35,10 +39,9 @@ Comparar versiones de acuerdo a la base y otra
 
 git diff original modificado
 
-git diff versionBase versionComparativa
+git diff base Comparacion
 
 ej: git diff 683fb35fd52070df689bcd410861c75a10b6d1ec c8cd36cd01360a50b676e6f992f35b58c55a4eed
-
 
 #Comparando el origina con otra version
 muestra en verde la version original por terminal y en rojo los cambios actuales que hicimos en la otra version
@@ -54,7 +57,7 @@ Este nos motrara todos los cambios creados desde el ultimo rastreo hasta la ulti
 
 ej: yo hice una modificacion despues de añadirlo al rastreo en una instancia de tiempo, uso git diff y me muestra exactamente que cambie de ese archivo o archivos
 
-Resumeniendo, compara lo que tenemos en staging(preaprado) y lo que hicimos en el documento despues de dejarlo preparado(ya rastreado en una version con una serie de cosas ya creadas).
+Resumiendo, compara lo que tenemos en staging(preaprado) y lo que hicimos en el documento despues de dejarlo preparado(ya rastreado en una version con una serie de cosas ya creadas).
 
 Diferencias en el directorio actual(repo) y stating(preparado para enviar al repositorio)
 
@@ -106,7 +109,6 @@ ej: git checkout c8cd36cd01360a50b676e6f992f35b58c55a4eed historia.txt
 Por ejemplo si volvemos un archivo a un commit especifico y lo modificamos entonces luego de modificarlo lo añadimos al rastreo(tracking).
 
  hacemos un commit y luego cuando lo subamos al repositorio solo aparecera ese archivo modificado sin afectar a los demas archivos que podamos tendremos
-
 
 Para eliminar archivos de git(Rastreados o Tracking) sin eliminar el historial de cambios hechos en el de tal forma que en cualquier momento podemos volver a recuperar estos archivos desde el ultimo commit hecho antes de borrar el archivo en cuestion.
 
