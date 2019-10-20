@@ -137,3 +137,13 @@ git branch <nombre>
 Ver todas las ramas actuales que posee el repositorio
 
 git branch -> Nombre de la cabecera actual estara marcada con * y color verde
+
+Migrar los cambios hechos de una rama a la rama actual
+
+Si estoy en la rama master y le hago merge a otra rama distinta a la master estonces yo estaria trayendo a mi rama master los cambios realizado en el
+
+git merge <rama>
+
+NT: Si tenemos algun conflicto este nos marcara con el lugar llamado head y otro con el nombre de la ramma del cual estamos obteniendo el cambio.
+
+luego de resolver los conflictos tenemos que rastrearlos nuevamente y como ya estaban rastreados usamos simplemente un git commit -am "Solucione el conflicto", listo entonces ya estaria la combinacion con la rama indicada :).
