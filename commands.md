@@ -133,3 +133,7 @@ git merge -> Traspasar los cambios recibidor por el fetch y añadirlos a tus arc
 Para crear una rama
 
 git branch <nombre>
+
+Ver todas las ramas actuales que posee el repositorio
+
+git branch -> Nombre de la cabecera actual estara marcada con * y color verde
