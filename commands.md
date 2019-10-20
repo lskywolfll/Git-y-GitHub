@@ -147,3 +147,7 @@ git merge <rama>
 NT: Si tenemos algun conflicto este nos marcara con el lugar llamado head y otro con el nombre de la ramma del cual estamos obteniendo el cambio.
 
 luego de resolver los conflictos tenemos que rastrearlos nuevamente y como ya estaban rastreados usamos simplemente un git commit -am "Solucione el conflicto", listo entonces ya estaria la combinacion con la rama indicada :).
+
+Para agregar un servidor remoto el cual almacene nuestros archivos rastreados con git
+
+git remote add origin <url>
