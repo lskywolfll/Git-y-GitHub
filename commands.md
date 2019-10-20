@@ -129,3 +129,7 @@ Recibir un cambio del repositorio remoto pero no te los copia con los archivos a
 git fetch -> Traer los datos nuevos que hay en el repositorio remoto
 
 git merge -> Traspasar los cambios recibidor por el fetch y añadirlos a tus archivos o en su defecto agregar de los cambios hechos en el repositorio
+
+Para crear una rama
+
+git branch <nombre>
