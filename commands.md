@@ -1,4 +1,8 @@
 
+##
+# git command --help y te mandara a la propia documentacion de git con el command respectivo para ver como funciona el funcionamiento de este
+##
+
 Rastrear archivos
 
 git add <file>
@@ -47,6 +51,8 @@ Otro dato curioso es que si usamos simplemente
 git diff
 
 Este nos motrara todos los cambios creados desde el ultimo rastreo hasta la ultima modificacion o agregacion de contenido como en una pagina web
+
+ej: yo hice una modificacion despues de añadirlo al rastreo en una instancia de tiempo, uso git diff y me muestra exactamente que cambie de ese archivo o archivos
 
 Resumeniendo, compara lo que tenemos en staging(preaprado) y lo que hicimos en el documento despues de dejarlo preparado(ya rastreado en una version con una serie de cosas ya creadas).
 
