@@ -58,19 +58,34 @@ git log
 
 Volver a una version anterior
 
+Lo que hace es que nosotros volvemos a un punto de las versiones que tengamos en nuestro repositorio(local o remoto) y empezamos desde el punto en el cual nosotros queramos
+
+git reset commit(hash)
+
 Tiene 2 tipos de reset
 
-1- suave = --soft
+1- soft(suave)
+2- hard(fuerte)
 
 Lo que tengamos en stagin(preparado osea ya con commit y no en el repositorio) se guardara y el directorio de trabajo volvera al estado anterior indicado(commit)
 
 Como se guarda entonces podremos volver al commit hecho despues de la version a regresar por ende tendremos una ayuda en caso lo hayamos hecho por equivocacion
 
-2- duro = --hard
+<hash> Son los numeros en memoria que tiene asignado git al commit creado ej: 85ff8c0072a564e9 es mas largo en realidad
+
+git reset --soft <hash>
 
 Borra practicamente todo lo que se haya hecho anteriormente y queda como la master(principal) con la version asignada
 
-git reset commit(ej: 85ff2c0072a564e9cb0eaa6567551e44ca977f87)
+git reset --hard <hash>
+
+ej: git reset 85ff2c0072a564e9cb0eaa6567551e44ca977f87
+
+Otro dato curioso es el uso de sacar todos los archivos del area de preparacion(sin commit) sin borrarlos y mantener todo lo que se ha hecho con ellos e no se envien en el proximo commit que haremos.
+
+ en caso nosotros queramos agregarlos nuevamente simplemente usaremos un git add
+
+ git reset HEAD
 
 Nos muestra los cambios especificos en cuales archivos de acuerdo al commit
 
@@ -85,3 +100,24 @@ ej: git checkout c8cd36cd01360a50b676e6f992f35b58c55a4eed historia.txt
 Por ejemplo si volvemos un archivo a un commit especifico y lo modificamos entonces luego de modificarlo lo añadimos al rastreo(tracking).
 
  hacemos un commit y luego cuando lo subamos al repositorio solo aparecera ese archivo modificado sin afectar a los demas archivos que podamos tendremos
+
+
+Para eliminar archivos de git(Rastreados o Tracking) sin eliminar el historial de cambios hechos en el de tal forma que en cualquier momento podemos volver a recuperar estos archivos desde el ultimo commit hecho antes de borrar el archivo en cuestion.
+
+git rm <file>
+
+Para eliminar los archivos en el area de preparacion(Stagin) y del proximo commit pero manteniendolos en nuestro disco duro(Osea en memoria de nuestro equipo)
+
+git rm --cached <file>
+
+Para eliminar los archivos rastreados por git y del disco duro
+
+git rm --force <file>
+
+#Git siempre resguardara todo lo que hagamos por lo cual podremos acceder al registro de existencia de los archivos de git(configuraciones y almacenamiento donde lo guarda) y recuperarlos si es necesario
+
+Recibir un cambio del repositorio remoto pero no te los copia con los archivos actuales(tu almacenamiento local) y para que obtengas los cambios necesitamos hacer un merge
+
+git fetch -> Traer los datos nuevos que hay en el repositorio remoto
+
+git merge -> Traspasar los cambios recibidor por el fetch y añadirlos a tus archivos o en su defecto agregar de los cambios hechos en el repositorio
