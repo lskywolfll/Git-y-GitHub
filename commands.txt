@@ -70,4 +70,14 @@ Como se guarda entonces podremos volver al commit hecho despues de la version a 
 
 Borra practicamente todo lo que se haya hecho anteriormente y queda como la master(principal) con la version asignada
 
-git reset commit(ej: 85ff2c0072a564e9cb0eaa6567551e44ca977f87) 
+git reset commit(ej: 85ff2c0072a564e9cb0eaa6567551e44ca977f87)
+
+git log --stat
+
+Nos muestra los cambios especificos en cuales archivos de acuerdo al commit
+
+Para volver un archivo a un commit especifico con los cambios respectivos a ese archivo usamos:
+
+git checkout commit archivo.extencion
+
+ej: git checkout c8cd36cd01360a50b676e6f992f35b58c55a4eed historia.txt
