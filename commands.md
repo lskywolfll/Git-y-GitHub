@@ -155,3 +155,15 @@ git remote add <alias> <url> ej: git remote add origin <url>
 Enviar datos rastreados con git nuestros al servidor remoto
 
 git push origin <rama>
+
+Traer todos los cambios del servidor remoto a tu repositorio local con fecth y merge
+
+git pull <NombreOrigen> <Rama>
+
+Hacer una migracion al servidor remoto donde la historia es distinta, por ej: creamos un repositorio en git pero este tiene un commit ya dado por el readme y sin muchos commit como el local que tenemos.
+
+En cuyo caso nos saldra un error que las historia son distintan cuando nosotros queramos hacer un push al servidor remoto.
+
+Solucion
+
+git pull <origin> <master> --allow-unrelated-histories
