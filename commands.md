@@ -5,7 +5,7 @@
 git init
 
 ### Rastrear archivos
-git add <file>
+git add file
 
 ### Añadir todas las carpetas y archivos en la carpeta actual posicionada
 
@@ -82,11 +82,11 @@ Como se guarda entonces podremos volver al commit hecho después de la versión 
 
 <hash> Son los números en memoria que tiene asignado git al commit creado ej: 85ff8c0072a564e9 es mas largo en realidad
 
-git reset --soft <hash>
+git reset --soft hash
 
 Borra prácticamente todo lo que se haya hecho anteriormente y queda como la master(principal) con la versión asignada
 
-git reset --hard <hash>
+git reset --hard hash
 
 ej: git reset 85ff2c0072a564e9cb0eaa6567551e44ca977f87
 
@@ -112,19 +112,19 @@ Por ejemplo si volvemos un archivo a un commit específico y lo modificamos ento
 
 Estar en una rama distinta al master usamos:
 
-git checkout <rama>
+git checkout rama
 
 ### Para eliminar archivos de git(Rastreados o Tracking) sin eliminar el historial de cambios hechos en él de tal forma que en cualquier momento podemos volver a recuperar estos archivos desde el último commit hecho antes de borrar el archivo en cuestión.
 
-git rm <file>
+git rm file
 
 ### Para eliminar los archivos en el area de preparación(Stagin) y del próximo commit pero manteniéndolos en nuestro disco duro(Osea en memoria de nuestro equipo)
 
-git rm --cached <file>
+git rm --cached file
 
 ### Para eliminar los archivos rastreados por git y del disco duro
 
-git rm --force <file>
+git rm --force file
 
 ### Git siempre resguardara todo lo que hagamos por lo cual podremos acceder al registro de existencia de los archivos de git(configuraciones y almacenamiento donde lo guarda) y recuperarlos si es necesario
 
@@ -136,7 +136,7 @@ git merge -> Traspasar los cambios recibidor por el fetch y añadirlos a tus arc
 
 ### Crear una rama
 
-git branch <nombre>
+git branch nombre
 
 ### Ver todas las ramas actuales que posee el repositorio
 
@@ -146,7 +146,7 @@ git branch -> Nombre de la cabecera actual estará marcada con * y color verde
 
 Si estoy en la rama master y le hago merge a otra rama distinta a la master entonces yo estaría trayendo a mi rama master los cambios realizado en el
 
-git merge <rama>
+git merge rama
 
 NT: Si tenemos algún conflicto éste nos marcará con el lugar llamado head y otro con el nombre de la rama del cual estamos obteniendo el cambio.
 
@@ -154,15 +154,15 @@ luego de resolver los conflictos tenemos que rastrearlos nuevamente y como ya es
 
 ### Para agregar un servidor remoto el cual almacene nuestros archivos rastreados con git
 
-git remote add <alias> <url> ej: git remote add origin <url>
+git remote add alias url ej: git remote add origin <url>
 
 ### Enviar datos rastreados con git nuestros al servidor remoto
 
-git push origin <rama>
+git push origin rama
 
 Traer todos los cambios del servidor remoto a tu repositorio local con fecth y merge
 
-git pull <NombreOrigen> <Rama>
+git pull NombreOrigen Rama
 
 Hacer una migración al servidor remoto donde la historia es distinta, por ej: creamos un repositorio en git pero este tiene un commit ya dado por el readme y sin muchos commit como el local que tenemos.
 
@@ -170,4 +170,4 @@ En cuyo caso nos saldrá un error que las historia son distintas cuando nosotros
 
 Solución
 
-git pull <origin> <master> --allow-unrelated-histories
+git pull origin master --allow-unrelated-histories
