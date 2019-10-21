@@ -156,6 +156,10 @@ luego de resolver los conflictos tenemos que rastrearlos nuevamente y como ya es
 
 git remote add alias url ej: git remote add origin <url>
 
+### Listado de servidores remotos
+
+git remote -v
+
 ### Enviar datos rastreados con git nuestros al servidor remoto
 
 git push origin rama
