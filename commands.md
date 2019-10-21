@@ -8,7 +8,7 @@ git add <file>
 
 git add .
 
-### Para añadir el rastreo a archivos ya rastreados anteriormente y conjunto a un commit podemos usar, cabe destacar que solo funciona si son archivos de los cuales nosotros ya hemos rastreados(tracking)
+### Para añadir el rastreo a archivos ya rastreados anteriormente y conjunto a un commit podemos usar un commit, cabe destacar que solo funciona si son archivos de los cuales nosotros ya hemos rastreados(tracking)
 
 git commit -am "mensaje"
 
