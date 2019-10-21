@@ -80,11 +80,11 @@ Lo que tengamos en staging(preparado osea ya con commit y no en el repositorio) 
 
 Como se guarda entonces podremos volver al commit hecho después de la versión a regresar por ende tendremos una ayuda en caso lo hayamos hecho por equivocación
 
-<hash> Son los números en memoria que tiene asignado git al commit creado ej: 85ff8c0072a564e9 es mas largo en realidad
+### hash Son los números en memoria que tiene asignado git al commit creado ej: 85ff8c0072a564e9 es mas largo en realidad
 
 git reset --soft hash
 
-Borra prácticamente todo lo que se haya hecho anteriormente y queda como la master(principal) con la versión asignada
+### Borra prácticamente todo lo que se haya hecho anteriormente y queda como la master(principal) con la versión asignada
 
 git reset --hard hash
 
@@ -110,7 +110,7 @@ Por ejemplo si volvemos un archivo a un commit específico y lo modificamos ento
 
  hacemos un commit y luego cuando lo subamos al repositorio solo aparecera ese archivo modificado sin afectar a los demás archivos que podamos tendremos
 
-Estar en una rama distinta al master usamos:
+### Estar en una rama distinta al master y obtener todos sus archivos
 
 git checkout rama
 
