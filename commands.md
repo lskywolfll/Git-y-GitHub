@@ -170,6 +170,10 @@ git remote -v
 
 git push origin rama
 
+### Enviar datos de manera forzada al servidor remoto
+
+git push --force origin master
+
 ### Traer todos los cambios del servidor remoto a tu repositorio local con fecth y merge
 
 git pull NombreOrigen Rama
