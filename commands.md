@@ -132,6 +132,12 @@ git rm --force file
 
 git fetch -> Traer los datos nuevos que hay en el repositorio remoto
 
+ej: git fetch origin master
+
+Esto nos traera algo llamado FETCH_HEAD(apunta a la cabeza actual(rama)) y tendremos que hacer un merge a el con:
+
+git merge FETCH_HEAD
+
 git merge -> Traspasar los cambios recibidor por el fetch y añadirlos a tus archivos o en su defecto agregar de los cambios hechos en el repositorio
 
 ### Crear una rama
