@@ -164,14 +164,14 @@ git remote -v
 
 git push origin rama
 
-Traer todos los cambios del servidor remoto a tu repositorio local con fecth y merge
+### Traer todos los cambios del servidor remoto a tu repositorio local con fecth y merge
 
 git pull NombreOrigen Rama
 
-Hacer una migración al servidor remoto donde la historia es distinta, por ej: creamos un repositorio en git pero este tiene un commit ya dado por el readme y sin muchos commit como el local que tenemos.
+### Hacer una migración al servidor remoto donde la historia es distinta, por ej: creamos un repositorio en git pero este tiene un commit ya dado por el readme y sin muchos commit como el local que tenemos.
 
 En cuyo caso nos saldrá un error que las historia son distintas cuando nosotros queramos hacer un push al servidor remoto.
 
-Solución
+#### Solución
 
 git pull origin master --allow-unrelated-histories
