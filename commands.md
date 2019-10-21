@@ -1,5 +1,9 @@
 ## git command --help y te mandara a la propia documentación de git con el command respectivo para ver cómo funciona el funcionamiento de este
 
+### Crear un repositorio local con git para rastrear los cambios de los archivos
+
+git init
+
 ### Rastrear archivos
 git add <file>
 
@@ -69,8 +73,8 @@ git reset commit(hash)
 
 ### Tiene 2 tipos de reset
 
-1- soft(suave)
-2- hard(fuerte)
+1. soft(suave)
+2. hard(fuerte)
 
 Lo que tengamos en staging(preparado osea ya con commit y no en el repositorio) se guardará y el directorio de trabajo volverá al estado anterior indicado(commit)
 
@@ -105,6 +109,10 @@ ej: git checkout c8cd36cd01360a50b676e6f992f35b58c55a4eed historia.txt
 Por ejemplo si volvemos un archivo a un commit específico y lo modificamos entonces luego de modificarlo lo añadimos al rastreo(tracking).
 
  hacemos un commit y luego cuando lo subamos al repositorio solo aparecera ese archivo modificado sin afectar a los demás archivos que podamos tendremos
+
+Estar en una rama distinta al master usamos:
+
+git checkout <rama>
 
 ### Para eliminar archivos de git(Rastreados o Tracking) sin eliminar el historial de cambios hechos en él de tal forma que en cualquier momento podemos volver a recuperar estos archivos desde el último commit hecho antes de borrar el archivo en cuestión.
 
