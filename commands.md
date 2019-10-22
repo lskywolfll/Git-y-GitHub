@@ -234,3 +234,9 @@ luego :
 
 ssh-add -K ~/.ssh/id_rsa
 
+
+### Cambiar la url de un servidor remoto
+
+git remote set-url < Alias > < url >
+
+ej: git remote set-url origin < urlRepo >
