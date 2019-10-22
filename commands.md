@@ -185,3 +185,52 @@ En cuyo caso nos saldrá un error que las historia son distintas cuando nosotros
 #### Solución
 
 git pull origin master --allow-unrelated-histories
+
+### Crear una llave privada con ssh
+
+-t -> indicar el algoritmo de encriptado
+-b -> Indicar la cantidad de complejidad de la clave
+-C -> Correo electronico al que estara conectada esta llave en este caso el de github
+
+ssh-keygen -t rsa -b 4096 -C "renealejandrosanchezmorales@gmail.com"
+
+NT:
+
+Se puede agregar un passphrase(una frase adicional con espacios) para asi hacer aun mas segura tu conexion 
+
+En la carpeta alojada de la llave ssh tendremos un archivo sin extension(llave privada) y otro con extension .pub(llave publica)
+
+### Revisar que el servidor de ssh este activado y que tus llaven esten corriendo para establecer conexiones (linux y windows)
+
+eval $(ssh-agent -s)
+
+### Agregar tu llave privada para que quede registrada en el sistema para usarla
+
+~ -> Indicar el home(osea a tu usuario) 
+.nombre -> Archivo oculto
+
+ssh-add ~/.shh/llavePrivada
+
+ej: ssh-add ~/.ssh/id_rsa
+
+### Mac
+
+#### Todo lo anterior pero se debe hacer:
+
+Dentro de la carpeta ssh tendremos otro archivo con known_host
+
+Evaluar si esta corriendo y encender
+
+eval "$(ssh-agent -s)"
+
+Si son versiones avanzadas como el 11, debes agregar un config en la carpeta del ssh y guardarlo sin extensión
+
+Host *
+		AddKeysToAgent yes
+		UseKeychain yes
+		IdentityFile ~/.ssh/id_rsa
+
+luego :
+
+ssh-add -K ~/.ssh/id_rsa
+
