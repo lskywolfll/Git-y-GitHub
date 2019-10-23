@@ -240,3 +240,5 @@ ssh-add -K ~/.ssh/id_rsa
 git remote set-url < Alias > < url >
 
 ej: git remote set-url origin < urlRepo >
+
+Verificando!
