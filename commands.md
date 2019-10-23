@@ -35,6 +35,14 @@ git show file
 
 git show
 
+### Mostrar las ramas que existen y sus historias
+
+git show-branch
+
+### Mostrar todas las ramas conjunto a mas detalles que el anterior
+
+git show-branch --all
+
 ### Comparar versiones de acuerdo a la base y otra
 
 git diff original modificado
@@ -178,7 +186,7 @@ luego de resolver los conflictos tenemos que rastrearlos nuevamente y como ya es
 
 ### Para agregar un servidor remoto el cual almacene nuestros archivos rastreados con git
 
-git remote add alias url ej: git remote add origin <url>
+git remote add alias url ej: git remote add origin < url >
 
 ### Listado de servidores remotos
 
@@ -290,4 +298,8 @@ git tag -d dormido
 
 ### Borrar un tag en el servidor remoto(GitHub) 
 
-git push origin :refs/tags/tag(nombre del tag)
+git push origin :refs/tags/tag(nombre del tag)	
+
+### Abrir una interfaz visual
+
+gitk
