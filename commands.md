@@ -303,3 +303,7 @@ git push origin :refs/tags/tag(nombre del tag)
 ### Abrir una interfaz visual
 
 gitk
+
+### Clonar un repositorio del servidor remoto
+
+git clone < url >
