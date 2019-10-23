@@ -266,7 +266,7 @@ m -> Mensaje
 
 command: git tag -a (v0.1 o v1.0 o v2.0 y etc) -m "Mensaje" hash(ej: 103627d)
 
-git tag -a v0.1 -m "Resultado de las primeras clases del curso" hash
+git tag -a v0.1 -m "Resultado de las primeras clases del curso" hash(commit)
 
 ### Lista de todos los tags por su valor osea su nombre dejado
 
