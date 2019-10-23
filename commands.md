@@ -61,9 +61,27 @@ ej: yo hice una modificación después de añadirlo al rastreo en una instancia 
 
 ### Diferencias en el directorio actual(repo) y stating(preparado para enviar al repositorio)
 
-### Revisar todos los commits creados hasta el dia actual
+### Revisar todos los commits creados hasta el dia actual(No todos los cambios)
 
 git log
+
+### Revisar todos los cambios hechos historicamente por todos en el repositorio
+
+git log --all
+
+### Revisar todos pero con grafos visual
+
+git log --all --graph
+
+### Revisar todos los cambios con grafos y de manera comprimida
+
+git log --all --graph --decorate --oneline
+
+### Crear un alias en terminal linux(windows=gitbash o bash(linux subsystem))
+
+alias nombre="comando que tu quieras"
+
+alias arbolito="git log --all --graph --decorate --oneline"
 
 ### Volver a una versión anterior
 
@@ -241,4 +259,35 @@ git remote set-url < Alias > < url >
 
 ej: git remote set-url origin < urlRepo >
 
-Verificando!
+### Agregar un tag o mensaje respectivo a la version de nuestro proyecto por ejemplo
+
+a -> Agregar
+m -> Mensaje
+
+command: git tag -a (v0.1 o v1.0 o v2.0 y etc) -m "Mensaje" hash(ej: 103627d)
+
+git tag -a v0.1 -m "Resultado de las primeras clases del curso" hash
+
+### Lista de todos los tags por su valor osea su nombre dejado
+
+git tag
+
+### Listado de todos los tags, quien lo hizo, el commit al que se le asigno
+
+git show-ref --tags
+
+### Subir los tags para que se vean en github de manera visual
+
+git push origin --tags
+
+### Borrar un tag de manera local
+
+d -> Eliminar
+
+git tag -d tag
+
+git tag -d dormido
+
+### Borrar un tag en el servidor remoto(GitHub) 
+
+git push origin :refs/tags/tag(nombre del tag)
