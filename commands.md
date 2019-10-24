@@ -304,6 +304,32 @@ git push origin :refs/tags/tag(nombre del tag)
 
 gitk
 
-### Clonar un repositorio del servidor remoto
+### Pull Request(github), push request(bitbucket), merge request(gitlab)
 
-git clone < url >
+Tiempo de resolver problemas con los proyectos mayormente se crearan ramas para estos tipos de casos ej:
+
+1. git branch fix-typo
+2. git checkout fix-typo
+
+#### Luego de solucionar el problema:
+
+1. git add < files > o si estan ya rastreados todos los archivos y solo modificaste entonces git commit -am "mensaje"
+
+#### Mandar la rama al servidor remoto
+
+2. git push origin fix-typo
+
+Para poder administrar estas soluciones o caracteristicas nuevas en github se debera hacer:
+
+1. Hacer un pull request(Te saldra por defecto cuando se suba la rama en github donde te dira compara o traer el requirimiento)
+
+2. Agregar parte del equipo para que hagas un code review(Revisar el codigo) para poder estar seguros que no tendra ningun error o arreglar algun detalle
+
+3. Parte del equipo puede llegar a exigir algunos cambios en la solucion u caracteristica nueva a ser publicada en produccion
+
+4. Siempre se debe respetar a la persona encargada de hacer el merge en los pull request para tener un control para que no se vaya a subir cualquier cosa
+
+5. Luego del merge, Borrar(opcional) la rama la cual solucio el problema o creada la caracteristica nueva dependiendo como se este implementando este tipo de cosa, cada equipo puede borrar o no borrarlo
+
+### Proximamente cuando use gitlab y bitbucket se integrara la forma de hacerlo aun que probablemente sea muy muy similar a lo que hemos hecho o exactamente lo mismo
+
