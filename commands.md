@@ -188,6 +188,10 @@ luego de resolver los conflictos tenemos que rastrearlos nuevamente y como ya es
 
 git remote add alias url ej: git remote add origin < url >
 
+### Servidores remotos externos para mantener actualizado el fork que nosotros hagamos(Es como tener su master en otro alias para estar actualizado ya que por defecto no es nuestro repositorio y no nos lo traera e avisara)
+
+git remote add upstream(Es un estandar pero es opcional ya que solo es un alias) < url >
+
 ### Listado de servidores remotos
 
 git remote -v
