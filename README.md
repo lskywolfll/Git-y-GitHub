@@ -405,3 +405,13 @@ Es decisión de cada equipo, y al menos en el que yo trabajo, pues es una practi
 `git stash list`
 
 > stash@{0}: WIP on master: 581f390 Se agregan breves ejemplos
+
+### Traer tus cambios guardados de manera temporal
+
+`git stash pop`
+
+> Traera el ultimo stash hecho
+
+### Eliminar los archivos guardados temporales
+
+`git stash drop`
