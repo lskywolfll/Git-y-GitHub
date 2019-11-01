@@ -494,3 +494,9 @@ Es decisión de cada equipo, y al menos en el que yo trabajo, pues es una practi
 `git cherry-pick < hash >`
 
 > ej: git cherry-pick da86b3b
+
+### Ver todo el flujo de todo lo que se ha hecho en el repositorio local
+
+`git reflog`
+
+>No se le puede ocultar nada y es el poseedor de la ultima palabra!! 🐱‍👤
