@@ -400,6 +400,10 @@ Es decisión de cada equipo, y al menos en el que yo trabajo, pues es una practi
 
 `git stash`
 
+### Escoger que archivos guardar temporalmente y ver los cambios hechos
+
+`git stash --patch`
+
 ### Lista de los cambios guardados en un espacio temporal
 
 `git stash list`
@@ -415,3 +419,34 @@ Es decisión de cada equipo, y al menos en el que yo trabajo, pues es una practi
 ### Eliminar los archivos guardados temporales
 
 `git stash drop`
+
+> Borrar uno en espefico `git stash drop stash@{0}`
+
+### Guardar cambios temporales en una nueva rama
+
+`git stash branch < nombre >`
+
+### Aplicar un cambio guardado temporal especifico
+
+`git stash apply stash@{0}`
+
+> el 0 varia de los guardados temporales que estes haciendo
+
+### Reaplicar cambios almacenados
+
+`git stash apply --index`
+
+### Guardar temporalmente archivos exceptuando los rastreados con git add
+
+`git stash --keep-index`
+
+### Ver que cambios se han hecho,creado,modificado,eliminado y el nombre del archivo
+
+`git status -s`
+
+### Guardar temporalmente archivos no rastreados y rastreados
+
+####Formas
+
+1. `git stash --include-untracked`
+2. `git stash -u`
