@@ -4,11 +4,11 @@ Un blog increíble para el[ curso de Git y Github](https://platzi.com/cursos/git
 > - niñita
 
 <!-- Arreglar esto -->
-![](https://img.shields.io/Git-y-GitHub/stars/pandao/editor.md.svg) 
-![](https://img.shields.io/Git-y-GitHub/forks/pandao/editor.md.svg) 
-![](https://img.shields.io/Git-y-GitHub/tag/pandao/editor.md.svg) 
-![](https://img.shields.io/Git-y-GitHub/release/pandao/editor.md.svg) 
-![](https://img.shields.io/Git-y-GitHub/issues/pandao/editor.md.svg) 
+![](https://img.shields.io/github/stars/Git-y-GitHub/editor.md.svg) 
+![](https://img.shields.io/github/forks/Git-y-GitHub/editor.md.svg) 
+![](https://img.shields.io/github/tag/Git-y-GitHub/editor.md.svg) 
+![](https://img.shields.io/github/release/Git-y-GitHub/editor.md.svg) 
+![](https://img.shields.io/github/issues/Git-y-GitHub/editor.md.svg) 
 ![](https://img.shields.io/bower/v/editor.md.svg)
 
 
