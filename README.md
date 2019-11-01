@@ -364,3 +364,29 @@ Para poder administrar estas soluciones o caracteristicas nuevas en github se de
 >>>> Otro punto luego usas git branch -D < rama > para eliminar para siempre y dejar a la master con toda la historia sin dejar registros de nada.... terrorifico
 
 [Beneficios sobre el rebase para ciertos aspectos](https://www.atlassian.com/git/tutorials/merging-vs-rebasing "Beneficios sobre el rebase para ciertos aspectos")
+
+> rinaplata
+>> Git rebase básicamente lo que hace es recopilar uno a uno los cambios confirmados en una rama, y reaplicarlos sobre otra. Utilizar rebase nos puede ayudar a evitar conflictos siempre que se aplique sobre commits que están en local y no han sido subidos a ningún repositorio remoto. Si no tienen cuidado con esto último y algún compañero utiliza cambios afectados, seguro que tendrá problemas ya que este tipo de conflictos normalmente son difíciles de reparar.
+
+> [Oscar Callisaya](https://platzi.com/@oreynaldocl/ "Oscar Callisaya")
+>> Aquí difiero completamente, aunque estoy de acuerdo en:
+
+* Es una mala practica, siempre y cuando se haga rebase de una rama compartida, que mas de 1 developer lo trabaje.
+
+* Es costosa, ya que el developer tiene que resolver conflictos en X commits y depende de los conflictos es tedioso. En caso de merge sin rebase, el conflicto se resuelve una vez.
+
+* Agrega un step extra al proceso.
+
+Ahora doy mis razones de por que me gusta el rebase:
+
+* Primero admito que fue el primer proceso que use en el trabajo, y es un poco sentimental.
+
+* Crea una claridad tremenda de los features. Si trabajamos con feature branching, cada rama mergueada luego de un rebase crea un trazo claro. 
+
+* Ejemplo, el proyecto que dejo como imagen final.
+
+* Se da responsabilidad al developer de actualizar siempre su rama al ultimo cambio, se corre test de integracion (al menos sanity tests).
+
+Aquí mi ejemplo, como ven se ve claramente las ramas y que cambios tiene cada bloque, cosa que en un grafo donde solo se hace mergue es confuso. Los commits de merge, muestran el total de archivos modificados y sus cambios.
+
+![](https://i.ibb.co/9w6rrsn/Rebase-Examples.png)
