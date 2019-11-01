@@ -10,6 +10,8 @@ Un blog increíble para el[ curso de Git y Github](https://platzi.com/cursos/git
 * Trucos muy locos del profesor
 * Las personalidades multiples de Freddy
 * Creado por el increble Platzi Team
+* Incluye ejemplo en Windows, Linux y Mac
+* Disponible para todas las edades
 
 ## git command --help y te mandara a la propia documentación de git con el command respectivo para ver cómo funciona el funcionamiento de este
 
