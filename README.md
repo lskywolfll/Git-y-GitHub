@@ -180,6 +180,10 @@ Esto nos traera algo llamado FETCH_HEAD(apunta a la cabeza actual(rama)) y tendr
 
 `git branch -> Nombre de la cabecera actual estará marcada con * y color verde`
 
+### Eliminar una rama
+
+`git branch -D < rama >`
+
 ### Migrar los cambios hechos de una rama a la rama actual
 
 Si estoy en la rama master y le hago merge a otra rama distinta a la master entonces yo estaría trayendo a mi rama master los cambios realizado en el
@@ -343,3 +347,20 @@ Para poder administrar estas soluciones o caracteristicas nuevas en github se de
 
 ### Proximamente cuando use gitlab y bitbucket se integrara la forma de hacerlo aun que probablemente sea muy muy similar a lo que hemos hecho o exactamente lo mismo
 
+### Git Rebase (Pegar historias de otra rama a la propia)
+> ej: Yo quiero pegar lo de la rama experimento a la rama master, entonces master tendra toda la historia y en los registros se vera como si master siempre haya tenido estos cambios
+
+`git rebase < rama >`
+
+1. Primero rebase a la rama del cual hemos modificado desde otra rama donde tenemos modificado el contenido
+2. Al final rebase desde esa rama la cual modificamos en otra rama donde agregamos contenido o codigo
+
+> Tener en mente que el primer paso es hacer un rebase en la rama de la cual quieres pegar a otra ej: experimento es el primero en hacer un rebase a master para pegarle su historia y luego master hara el rebase a experimento
+
+>> Cosas locas que puedes hacer para pegar historias a otra rama sin que en principio se hayan desarrollado en el
+
+>>> ES una pesima practica hacer esto en servidores remotos y solo debe usarse de manera local ya que si se usa en remoto habria un desmadre de la que ni te imaginas
+
+>>>> Otro punto luego usas git branch -D < rama > para eliminar para siempre y dejar a la master con toda la historia sin dejar registros de nada.... terrorifico
+
+[Beneficios sobre el rebase para ciertos aspectos](https://www.atlassian.com/git/tutorials/merging-vs-rebasing "Beneficios sobre el rebase para ciertos aspectos")
