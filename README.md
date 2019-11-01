@@ -508,6 +508,8 @@ Es decisión de cada equipo, y al menos en el que yo trabajo, pues es una practi
 
 ### Buscar archivos que contengan un valor
 
+> Es case sensitive, el valor que le dejemos lo buscara tal cual lo hayamos dejado ej: Platzi != platzi
+
 `git grep < valor >`
 
 > ej: `git grep color` y me buscara en todos los archivos que lo tengan
