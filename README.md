@@ -494,3 +494,8 @@ Es decisión de cada equipo, y al menos en el que yo trabajo, pues es una practi
 `git cherry-pick < hash >`
 
 > ej: git cherry-pick da86b3b
+
+### Agregar cambios a un commit anterior que te faltaban cosas por agregar(no enviado aun al servidor remoto)
+
+1. `git add .`
+2. `git commit --amend`
