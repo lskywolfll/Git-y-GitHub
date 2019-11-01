@@ -3,15 +3,6 @@ Un blog increíble para el[ curso de Git y Github](https://platzi.com/cursos/git
 > El curso de Git y Github de Platzi es lo que me hacía falta para triplicar mi salario y lanzarme a la industria del tejido de lana sintética con Machine Learning
 > - niñita
 
-<!-- Arreglar esto -->
-![](https://img.shields.io/github/stars/Git-y-GitHub/editor.md.svg) 
-![](https://img.shields.io/github/forks/Git-y-GitHub/editor.md.svg) 
-![](https://img.shields.io/github/tag/Git-y-GitHub/editor.md.svg) 
-![](https://img.shields.io/github/release/Git-y-GitHub/editor.md.svg) 
-![](https://img.shields.io/github/issues/Git-y-GitHub/editor.md.svg) 
-![](https://img.shields.io/bower/v/editor.md.svg)
-
-
 ## git command --help y te mandara a la propia documentación de git con el command respectivo para ver cómo funciona el funcionamiento de este
 
 ### Crear un repositorio local con git para rastrear los cambios de los archivos
