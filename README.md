@@ -486,3 +486,9 @@ Es decisión de cada equipo, y al menos en el que yo trabajo, pues es una practi
 `git clean -x -i`
 
 > -i es interactive para poder interactuar con el procedimiento
+
+### Combinar un commit antiguo o externo a una rama
+
+`git cherry-pick < hash >`
+
+> ej: git cherry-pick da86b3b
