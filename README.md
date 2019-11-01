@@ -390,3 +390,5 @@ Ahora doy mis razones de por que me gusta el rebase:
 Aquí mi ejemplo, como ven se ve claramente las ramas y que cambios tiene cada bloque, cosa que en un grafo donde solo se hace mergue es confuso. Los commits de merge, muestran el total de archivos modificados y sus cambios.
 
 ![](https://i.ibb.co/9w6rrsn/Rebase-Examples.png)
+
+Es decisión de cada equipo, y al menos en el que yo trabajo, pues es una practica muy util que nos ayuda mucho en el proces.
