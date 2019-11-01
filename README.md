@@ -523,3 +523,49 @@ Es decisión de cada equipo, y al menos en el que yo trabajo, pues es una practi
 ### Buscar commits que contengan o estuvo involucrado algo
 
 `git log -S "nombre"`
+
+### Cuantos commits han hechos cada integrante del repositorio
+
+`git shortlog`
+
+#### Mostrar la cantidad de commits han hecho cada uno
+
+`git shortlog -sn`
+
+#### Mostrar cantidad total de todos los commits
+
+`git shortlog -sn --all`
+
+#### Mostrar la cantidad total de commits exceptuando los merge
+
+`git shortlog -sn --all --no-merges`
+
+### Crear un alias de git en la maquina que estes
+
+`git config --global alias.nombre "comando"`
+
+>ej: `git config --global alias.nombre "shortlog -sn --all --no-merges"`
+
+### Quien hizo quien y cada linea de un archivo especifico
+
+`git blame < archivo.extension >`
+
+>ej: `git blame blogpost.html`
+
+#### Identacion un poco mejor
+
+`git blame -c < archivo >`
+
+### Ver los cambios que se hiciero y quien lo hizo desde el archivo x y desde las lineas x
+
+`git blame < ruta del archivo > -L inicio,fin`
+
+>ej: ``git blame css/estilos.css -L 35,53` desde la linea 35 hasta la linea 53
+
+### Ver las ramas remotas
+
+`git branch -r`
+
+### Ver todas las ramas (blancas => local y rojas => remoto)
+
+`git branch -a`
