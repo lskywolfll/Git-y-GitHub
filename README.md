@@ -1,5 +1,7 @@
-# HyperBlog
-Un blog increible para el curso de Git y GitHub en platzi!
+# Hyperblog 💚
+Un blog increíble para el[ curso de Git y Github](https://platzi.com/cursos/git-github/ " curso de Git y Github") de [Platzi](https://platzi.com/ "Platzi")
+> El curso de Git y Github de Platzi es lo que me hacía falta para triplicar mi salario y lanzarme a la industria del tejido de lana sintética con Machine Learning
+> - niñita
 
 ## git command --help y te mandara a la propia documentación de git con el command respectivo para ver cómo funciona el funcionamiento de este
 
