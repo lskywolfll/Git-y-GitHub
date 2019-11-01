@@ -450,3 +450,31 @@ Es decisión de cada equipo, y al menos en el que yo trabajo, pues es una practi
 
 1. `git stash --include-untracked`
 2. `git stash -u`
+
+### Guardar temporalmente todo
+
+`git stash --all`
+
+>Git clean no eliminara lo que se haya dejado en .gitignore
+
+### Ver que archivos borraras para limpiar el proyecto de archivos inncesarios(compilados,copias,sin rastrear y etc)
+
+`git clean --dry-run`
+
+### Limpiar todos los archivos y subcarpetas
+
+`git clean -f -d`
+
+### Verificar que eliminara y carpetas
+
+`git clean -d -n`
+
+### Eliminar archivos incluyendo lo que salga del gitignore(cuidado)
+
+`git clean -n -d -x`
+
+### Eliminar de manera interactiva y decidir por cada archivo
+
+`git clean -x -i`
+
+> -i es interactive para poder interactuar con el procedimiento
