@@ -446,7 +446,7 @@ Es decisión de cada equipo, y al menos en el que yo trabajo, pues es una practi
 
 ### Guardar temporalmente archivos no rastreados y rastreados
 
-####Formas
+#### Formas
 
 1. `git stash --include-untracked`
 2. `git stash -u`
