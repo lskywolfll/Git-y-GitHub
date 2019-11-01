@@ -352,8 +352,11 @@ Para poder administrar estas soluciones o caracteristicas nuevas en github se de
 
 `git rebase < rama >`
 
-1. Primero rebase a la rama del cual hemos modificado desde otra rama donde tenemos modificado el contenido
-2. Al final rebase desde esa rama la cual modificamos en otra rama donde agregamos contenido o codigo
+1. Primero rebase a la rama del cual hemos modificado desde otra rama donde tenemos modificado el contenido ej: de experimento a master(del cual modificamos un archivo)
+2. Al final rebase desde esa rama la cual modificamos en otra rama donde agregamos contenido o codigo ej: rebase de experimento a master
+
+1. Dentro de la rama experimento `git rebase master `
+2. Dentro de la rama master para pegar lo que hicimos en esperimento `git rebase experimento`
 
 > Tener en mente que el primer paso es hacer un rebase en la rama de la cual quieres pegar a otra ej: experimento es el primero en hacer un rebase a master para pegarle su historia y luego master hara el rebase a experimento
 
