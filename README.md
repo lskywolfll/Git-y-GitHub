@@ -505,3 +505,19 @@ Es decisión de cada equipo, y al menos en el que yo trabajo, pues es una practi
 
 1. `git add .`
 2. `git commit --amend`
+
+### Buscar archivos que contengan un valor
+
+`git grep < valor >`
+
+> ej: `git grep color` y me buscara en todos los archivos que lo tengan
+
+#### Curiosos:
+* `git grep -n < color >` nos dira en que linea del archivo aparece la palabra color
+* `git grep -c` nos dira cuantas veces se repite esta palabra y en que archivo
+
+> Si queremos saber cuantas veces usamos una etiqueta html usamos: `git grep "<p>"`
+
+### Buscar commits que contengan o estuvo involucrado algo
+
+`git log -S "nombre"`
