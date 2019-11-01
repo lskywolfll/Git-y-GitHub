@@ -500,3 +500,8 @@ Es decisión de cada equipo, y al menos en el que yo trabajo, pues es una practi
 `git reflog`
 
 >No se le puede ocultar nada y es el poseedor de la ultima palabra!! 🐱‍👤
+
+### Agregar cambios a un commit anterior que te faltaban cosas por agregar(no enviado aun al servidor remoto)
+
+1. `git add .`
+2. `git commit --amend`
