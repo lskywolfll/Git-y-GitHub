@@ -3,11 +3,12 @@ Un blog increíble para el[ curso de Git y Github](https://platzi.com/cursos/git
 > El curso de Git y Github de Platzi es lo que me hacía falta para triplicar mi salario y lanzarme a la industria del tejido de lana sintética con Machine Learning
 > - niñita
 
-![](https://img.shields.io/github/stars/Git-y-GitHub/editor.md.svg) 
-![](https://img.shields.io/github/forks/Git-y-GitHub/editor.md.svg) 
-![](https://img.shields.io/github/tag/Git-y-GitHub/editor.md.svg) 
-![](https://img.shields.io/github/release/Git-y-GitHub/editor.md.svg) 
-![](https://img.shields.io/github/issues/Git-y-GitHub/editor.md.svg) 
+<!-- Arreglar esto -->
+![](https://img.shields.io/Git-y-GitHub/stars/pandao/editor.md.svg) 
+![](https://img.shields.io/Git-y-GitHub/forks/pandao/editor.md.svg) 
+![](https://img.shields.io/Git-y-GitHub/tag/pandao/editor.md.svg) 
+![](https://img.shields.io/Git-y-GitHub/release/pandao/editor.md.svg) 
+![](https://img.shields.io/Git-y-GitHub/issues/pandao/editor.md.svg) 
 ![](https://img.shields.io/bower/v/editor.md.svg)
 
 
