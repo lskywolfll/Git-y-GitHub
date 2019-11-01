@@ -395,3 +395,13 @@ Aquí mi ejemplo, como ven se ve claramente las ramas y que cambios tiene cada b
 ![](https://i.ibb.co/9w6rrsn/Rebase-Examples.png)
 
 Es decisión de cada equipo, y al menos en el que yo trabajo, pues es una practica muy util que nos ayuda mucho en el proces.
+
+### Guardar cambios de manera temporal
+
+`git stash`
+
+### Lista de los cambios guardados en un espacio temporal
+
+`git stash list`
+
+> stash@{0}: WIP on master: 581f390 Se agregan breves ejemplos
