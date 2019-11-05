@@ -85,9 +85,31 @@ ej: yo hice una modificación después de añadirlo al rastreo en una instancia 
 
 ### Diferencias en el directorio actual(repo) y stating(preparado para enviar al repositorio)
 
+### Ver que cambios has hecho cuando ya preparaste un commit
+
+`git diff --cached`
+
+### Ver las diferencias mediante un programa,vim,araxis,emerge y etc
+
+`git difftool`
+
+#### Para saber que tienes disponible en tu sistema mediante la herramienta
+
+`git difftool -tool-help`
+
 ### Revisar todos los commits creados hasta el dia actual(No todos los cambios)
 
 `git log`
+
+### Revisar los cambios de los archivos de los commits
+
+`git log -p`
+
+### Establecer la cantidad de historial para ver la historia
+
+`git log -x`
+
+> ej: `git log -2` me dara los ultimos 2 commits y registros
 
 ### Revisar todos los cambios hechos historicamente por todos en el repositorio
 
