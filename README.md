@@ -43,6 +43,10 @@ Un blog increíble para el[ curso de Git y Github](https://platzi.com/cursos/git
 
 `git config --list --show-origin`
 
+### Ver configuraciones globales(usuario, email), version de git y alias creados(Tener en mente que estara segun donde estes posicionado donde lanzara la informacion del archivo de configuracion .gitconfig)
+
+``git config --global -e`
+
 ### Mostrar los cambios realizados y sus diferencias
 
 `git show file`
